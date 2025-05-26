@@ -18,7 +18,7 @@ export default function Navbar() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box>
             <Heading as='h1' size='md' noOfLines={1}>
-              Arslan Sarfraz {}
+              Ravi Varma Lingala {}
               <span style={{color: "#DD6B20"}}>.</span>
             </Heading>
           </Box>
