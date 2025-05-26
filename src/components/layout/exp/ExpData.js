@@ -15,7 +15,7 @@ import {TbSeo} from "react-icons/tb";
 
 export const ExpData = [
   {
-    company: "Hubble42 Inc",
+    company: "The Great Indian Comedy Show",
     jobtitle: "Frontend Developer | Feb 2023 - Present",
     desc: "Upgraded websites by integrating innovative features using JavaScript, React, and Next.js. Led projects aimed at introducing new functionalities and ensuring smooth behind-the-scenes operations. Crafted user-friendly, responsive designs optimized for diverse browsers, enhancing overall user experience and maintaining consistency across platforms.",
     iconNames: [FaReact, FaVuejs, SiTailwindcss, SiChakraui, FaGithub],
