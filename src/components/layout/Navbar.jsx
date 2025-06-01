@@ -27,7 +27,7 @@ export default function Navbar() {
               <Button onClick={toggleColorMode} size='sm'>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
-              <Link href='https://github.com/arslansarfraz' isExternal={true}>
+              <Link href='https://github.com/ravivarmalingala' isExternal={true}>
                 <Button
                   variant={"solid"}
                   color='#5A6065'
