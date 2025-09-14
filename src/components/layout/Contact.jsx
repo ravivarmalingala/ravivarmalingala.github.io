@@ -11,7 +11,7 @@ export default function Contact() {
         fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
         mb={6}
       >
-        Contact me however you like—call, mail, link, or clone. I’m multichannel.
+        Contact me however you like. I’m multichannel.
       </Heading>
 
       <Stack spacing={4} align="center">
@@ -23,7 +23,7 @@ export default function Contact() {
             color="#DD6B20"
             fontWeight="bold"
           >
-            Inbox Me, Maybe
+            Inbox Me
           </Link>
         </Text>
 
@@ -35,7 +35,7 @@ export default function Contact() {
             color="#DD6B20"
             fontWeight="bold"
           >
-            Voice Summoner
+            Voice
           </Link>
         </Text>
 
@@ -49,7 +49,7 @@ export default function Contact() {
             color="#DD6B20"
             fontWeight="bold"
           >
-            Career Lurking Spot
+            Career
           </Link>
         </Text>
 
