@@ -1,59 +1,28 @@
-import { Heading, Link, Stack, Text, Box } from "@chakra-ui/react";
-import React from "react";
+import { Container } from "@chakra-ui/react";
+import Navbar from "./components/layout/Navbar";
+import { Canvas } from "./Canvas";
+import ColorPalette from "./components/layout/ColorPalette";
+import Header from "./components/layout/Header";
+import PortfolioList from "./components/layout/portfolio/PortfolioList";
+import Contact from "./components/layout/Contact";
+import Copyright from "./components/layout/Copyright";
+import Experience from "./components/layout/exp/Experience";
 
-export default function Contact() {
+function App() {
   return (
-    <Box py={{ base: 10, md: 20 }} textAlign="center">
-      <Heading
-        lineHeight={1.3}
-        fontWeight={600}
-        fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
-        mb={6}
-      >
-        Get in Touch
-      </Heading>
-
-      <Stack spacing={4} align="center">
-        <Text>
-          Email:{" "}
-          <Link href="mailto:ravi@jobitmail.com" color="#DD6B20" fontWeight="bold">
-            ravi@jobitmail.com
-          </Link>
-        </Text>
-
-        <Text>
-          Phone:{" "}
-          <Link href="tel:+19376106752" color="#DD6B20" fontWeight="bold">
-            (937) 610-6752
-          </Link>
-        </Text>
-
-        <Text>
-          LinkedIn:{" "}
-          <Link
-            href="https://www.linkedin.com/in/ravivarmalingala/"
-            target="_blank"
-            rel="noopener noreferrer"
-            color="#DD6B20"
-            fontWeight="bold"
-          >
-            linkedin.com/in/ravivarmalingala
-          </Link>
-        </Text>
-
-        <Text>
-          GitHub:{" "}
-          <Link
-            href="https://github.com/ravivarmalingala"
-            target="_blank"
-            rel="noopener noreferrer"
-            color="#DD6B20"
-            fontWeight="bold"
-          >
-            github.com/ravivarmalingala
-          </Link>
-        </Text>
-      </Stack>
-    </Box>
+    <div>
+      <Container maxW="1300px">
+        <Navbar />
+        <Header />
+        <Experience />
+        <PortfolioList />
+        <Contact />
+        <Copyright />
+      </Container>
+      <Canvas />
+      <ColorPalette />
+    </div>
   );
 }
+
+export default App;
