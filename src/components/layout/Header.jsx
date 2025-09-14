@@ -12,6 +12,7 @@ import {
   useColorModeValue,
   Tag,
 } from "@chakra-ui/react";
+
 export default function Header() {
   return (
     <Container maxW={"7xl"}>
@@ -37,7 +38,7 @@ export default function Header() {
             fontWeight={600}
             fontSize={{base: "2xl", sm: "3xl", lg: "4xl"}}
           >
-            <Text as={"span"}>HEY! I'm a </Text>
+            <Text as={"span"}>Hi! I'm </Text>
             <Text
               as={"span"}
               position={"relative"}
@@ -52,10 +53,10 @@ export default function Header() {
                 zIndex: -1,
               }}
             >
-              Front-End
+              Ravi Varma Lingala
             </Text>
             <br />
-            <Text as={"span"}>Developer.</Text>
+            <Text as={"span"}>Software Development Engineer</Text>
           </Heading>
 
           <Stack
@@ -63,12 +64,13 @@ export default function Header() {
             direction={{base: "column", sm: "row"}}
           >
             <Text as={"span"} width={"100%"} color='#5A6065'>
-              My name is Arslan, and I'm a front-end developer skilled in
-              creating responsive and user-friendly websites and web
-              applications. I'm proficient in <Tag>HTML</Tag>, <Tag>CSS</Tag>,{" "}
-              <Tag>JavaScript</Tag>, and various front-end frameworks, including{" "}
-              <Tag>React.js</Tag>. I'm passionate about developing innovative
-              and visually appealing interfaces to enhance user experience.
+              I’m a Software Development Engineer with around 5 years of
+              experience building scalable, high-performance applications in
+              financial services and enterprise SaaS. Skilled in{" "}
+              <Tag>Java</Tag>, <Tag>Spring Boot</Tag>, <Tag>React.js</Tag>, and{" "}
+              <Tag>AWS</Tag>. Passionate about engineering excellence,
+              cloud-native development, and delivering innovative solutions
+              that improve performance, reliability, and user experience.
             </Text>
           </Stack>
         </Stack>
