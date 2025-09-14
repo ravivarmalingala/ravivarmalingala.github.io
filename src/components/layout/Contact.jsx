@@ -17,14 +17,24 @@ export default function Contact() {
       <Stack spacing={4} align="center">
         <Text>
           <FaEnvelope />{" "}
-          <Link href="mailto:ravi@jobitmail.com" color="#DD6B20" fontWeight="bold">
+          <Link
+            href="mailto:ravi@jobitmail.com"
+            isExternal
+            color="#DD6B20"
+            fontWeight="bold"
+          >
             Inbox Me, Maybe
           </Link>
         </Text>
 
         <Text>
           <FaPhone />{" "}
-          <Link href="tel:+19376106752" color="#DD6B20" fontWeight="bold">
+          <Link
+            href="tel:+19376106752"
+            isExternal
+            color="#DD6B20"
+            fontWeight="bold"
+          >
             Voice Summoner
           </Link>
         </Text>
@@ -35,6 +45,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/ravivarmalingala/"
             target="_blank"
             rel="noopener noreferrer"
+            isExternal
             color="#DD6B20"
             fontWeight="bold"
           >
@@ -48,6 +59,7 @@ export default function Contact() {
             href="https://github.com/ravivarmalingala"
             target="_blank"
             rel="noopener noreferrer"
+            isExternal
             color="#DD6B20"
             fontWeight="bold"
           >
