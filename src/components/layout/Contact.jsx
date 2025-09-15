@@ -18,7 +18,7 @@ export default function Contact() {
         <Text>
           <FaEnvelope />{" "}
           <Link
-            href="mailto:ravi@jobitmail.com"
+            href="mailto:ravivarmainsights@gmail.com"
             isExternal
             color="#DD6B20"
             fontWeight="bold"
