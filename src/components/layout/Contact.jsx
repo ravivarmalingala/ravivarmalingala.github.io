@@ -5,6 +5,7 @@ import React from "react";
 export default function Contact() {
   return (
     <Box py={{ base: 10, md: 20 }} textAlign="center">
+      {/* Heading with zoom on hover */}
       <Heading
         lineHeight={1.3}
         fontWeight={600}
@@ -15,7 +16,7 @@ export default function Contact() {
         _hover={{ transform: "scale(1.12)" }}
         cursor="pointer"
       >
-        Code, Call, Connect
+        Code, call, connect
       </Heading>
 
       <Stack spacing={4} align="center">
@@ -26,8 +27,10 @@ export default function Contact() {
             isExternal
             color="#DD6B20"
             fontWeight="bold"
+            transition="transform 0.25s ease-out"
+            _hover={{ transform: "scale(1.12)" }}
           >
-            Inbox Me, Maybe
+            Inboxify
           </Link>
         </HStack>
 
@@ -38,8 +41,10 @@ export default function Contact() {
             isExternal
             color="#DD6B20"
             fontWeight="bold"
+            transition="transform 0.25s ease-out"
+            _hover={{ transform: "scale(1.12)" }}
           >
-            Voice Summoner
+            Callgate
           </Link>
         </HStack>
 
@@ -52,8 +57,10 @@ export default function Contact() {
             isExternal
             color="#DD6B20"
             fontWeight="bold"
+            transition="transform 0.25s ease-out"
+            _hover={{ transform: "scale(1.12)" }}
           >
-            Career Lurking Spot
+            LinkedIn
           </Link>
         </HStack>
 
@@ -66,8 +73,10 @@ export default function Contact() {
             isExternal
             color="#DD6B20"
             fontWeight="bold"
+            transition="transform 0.25s ease-out"
+            _hover={{ transform: "scale(1.12)" }}
           >
-            Commit Central
+            GitZone
           </Link>
         </HStack>
       </Stack>
