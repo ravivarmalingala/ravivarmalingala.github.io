@@ -1,4 +1,4 @@
-import { Heading, Link, Stack, Text, Box } from "@chakra-ui/react";
+import { Heading, Link, Stack, Box, HStack } from "@chakra-ui/react";
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
 import React from "react";
 
@@ -11,36 +11,36 @@ export default function Contact() {
         fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
         mb={6}
       >
-        Contact me however you like. I’m multichannel.
+        Code, call, connect
       </Heading>
 
       <Stack spacing={4} align="center">
-        <Text>
-          <FaEnvelope />{" "}
+        <HStack spacing={2}>
+          <FaEnvelope />
           <Link
-            href="mailto:ravivarmainsights@gmail.com"
+            href="mailto:ravi@jobitmail.com"
             isExternal
             color="#DD6B20"
             fontWeight="bold"
           >
-            Inbox Me
+            Inbox Me, Maybe
           </Link>
-        </Text>
+        </HStack>
 
-        <Text>
-          <FaPhone />{" "}
+        <HStack spacing={2}>
+          <FaPhone />
           <Link
             href="tel:+19376106752"
             isExternal
             color="#DD6B20"
             fontWeight="bold"
           >
-            Voice
+            Voice Summoner
           </Link>
-        </Text>
+        </HStack>
 
-        <Text>
-          <FaLinkedin />{" "}
+        <HStack spacing={2}>
+          <FaLinkedin />
           <Link
             href="https://www.linkedin.com/in/ravivarmalingala/"
             target="_blank"
@@ -49,12 +49,12 @@ export default function Contact() {
             color="#DD6B20"
             fontWeight="bold"
           >
-            Career
+            Career Lurking Spot
           </Link>
-        </Text>
+        </HStack>
 
-        <Text>
-          <FaGithub />{" "}
+        <HStack spacing={2}>
+          <FaGithub />
           <Link
             href="https://github.com/ravivarmalingala"
             target="_blank"
@@ -65,7 +65,7 @@ export default function Contact() {
           >
             Commit Central
           </Link>
-        </Text>
+        </HStack>
       </Stack>
     </Box>
   );
