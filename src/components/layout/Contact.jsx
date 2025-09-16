@@ -1,18 +1,24 @@
 import { Heading, Link, Stack, Box, HStack } from "@chakra-ui/react";
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 import React from "react";
 
 export default function Contact() {
   return (
     <Box py={{ base: 10, md: 20 }} textAlign="center">
-      <Heading
-        lineHeight={1.3}
-        fontWeight={600}
-        fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
-        mb={6}
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        transition={{ type: "spring", stiffness: 300 }}
       >
-        Code, call, connect
-      </Heading>
+        <Heading
+          lineHeight={1.3}
+          fontWeight={600}
+          fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
+          mb={6}
+        >
+          Code, call, connect
+        </Heading>
+      </motion.div>
 
       <Stack spacing={4} align="center">
         <HStack spacing={2}>
