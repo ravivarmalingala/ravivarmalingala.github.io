@@ -5,7 +5,7 @@ import React from "react";
 export default function Contact() {
   return (
     <Box py={{ base: 10, md: 20 }} textAlign="center">
-      {/* Heading with zoom on hover */}
+      {/* Heading with zoom + glow on hover */}
       <Heading
         lineHeight={1.3}
         fontWeight={600}
@@ -13,25 +13,32 @@ export default function Contact() {
         mb={6}
         display="inline-block"
         transition="all 0.3s ease"
-        _hover={{ transform: "scale(1.12)" }}
+        _hover={{
+          transform: "scale(1.15)",
+          color: "#DD6B20",
+          textShadow: "0px 0px 12px rgba(221, 107, 32, 0.7)"
+        }}
         cursor="pointer"
       >
         Code, Call, Connect
       </Heading>
 
-      {/* Links with smoother hover zoom */}
+      {/* Links with creative hover effects */}
       <Stack spacing={4} align="center">
         <HStack
           spacing={2}
           transition="all 0.3s ease"
-          _hover={{ transform: "scale(1.12)" }}
+          _hover={{
+            transform: "scale(1.12)",
+            color: "#DD6B20",
+            textShadow: "0px 0px 8px rgba(221, 107, 32, 0.6)"
+          }}
           cursor="pointer"
         >
           <FaEnvelope />
           <Link
             href="mailto:ravivarmainsights@gmail.com"
             isExternal
-            color="#DD6B20"
             fontWeight="bold"
           >
             Inboxify
@@ -41,16 +48,15 @@ export default function Contact() {
         <HStack
           spacing={2}
           transition="all 0.3s ease"
-          _hover={{ transform: "scale(1.12)" }}
+          _hover={{
+            transform: "scale(1.12)",
+            color: "#DD6B20",
+            textShadow: "0px 0px 8px rgba(221, 107, 32, 0.6)"
+          }}
           cursor="pointer"
         >
           <FaPhone />
-          <Link
-            href="tel:+19376106752"
-            isExternal
-            color="#DD6B20"
-            fontWeight="bold"
-          >
+          <Link href="tel:+19376106752" isExternal fontWeight="bold">
             Callgate
           </Link>
         </HStack>
@@ -58,7 +64,11 @@ export default function Contact() {
         <HStack
           spacing={2}
           transition="all 0.3s ease"
-          _hover={{ transform: "scale(1.12)" }}
+          _hover={{
+            transform: "scale(1.12)",
+            color: "#DD6B20",
+            textShadow: "0px 0px 8px rgba(221, 107, 32, 0.6)"
+          }}
           cursor="pointer"
         >
           <FaLinkedin />
@@ -67,7 +77,6 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             isExternal
-            color="#DD6B20"
             fontWeight="bold"
           >
             LinkedIn
@@ -77,7 +86,11 @@ export default function Contact() {
         <HStack
           spacing={2}
           transition="all 0.3s ease"
-          _hover={{ transform: "scale(1.12)" }}
+          _hover={{
+            transform: "scale(1.12)",
+            color: "#DD6B20",
+            textShadow: "0px 0px 8px rgba(221, 107, 32, 0.6)"
+          }}
           cursor="pointer"
         >
           <FaGithub />
@@ -86,7 +99,6 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             isExternal
-            color="#DD6B20"
             fontWeight="bold"
           >
             GitZone
