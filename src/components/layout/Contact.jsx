@@ -15,7 +15,7 @@ export default function Contact() {
         _hover={{ transform: "scale(1.12)" }}
         cursor="pointer"
       >
-        Code, call, connect
+        Code, Call, Connect
       </Heading>
 
       <Stack spacing={4} align="center">
