@@ -19,6 +19,7 @@ export default function Contact() {
         Code, call, connect
       </Heading>
 
+      {/* Links with hover zoom */}
       <Stack spacing={4} align="center">
         <HStack spacing={2}>
           <FaEnvelope />
