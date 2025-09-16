@@ -6,7 +6,6 @@ import Header from "./components/layout/Header";
 import PortfolioList from "./components/layout/portfolio/PortfolioList";
 import Contact from "./components/layout/Contact";
 import Copyright from "./components/layout/Copyright";
-import Experience from "./components/layout/exp/Experience";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <Container maxW="1300px">
         <Navbar />
         <Header />
-        <Experience />
         <PortfolioList />
         <Contact />
         <Copyright />
