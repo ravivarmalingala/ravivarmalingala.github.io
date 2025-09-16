@@ -12,44 +12,55 @@ export default function Contact() {
         fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
         mb={6}
         display="inline-block"
-        transition="transform 0.25s ease-out"
+        transition="all 0.3s ease"
         _hover={{ transform: "scale(1.12)" }}
         cursor="pointer"
       >
-        Code, call, connect
+        Code, Call, Connect
       </Heading>
 
-      {/* Links with hover zoom */}
+      {/* Links with smoother hover zoom */}
       <Stack spacing={4} align="center">
-        <HStack spacing={2}>
+        <HStack
+          spacing={2}
+          transition="all 0.3s ease"
+          _hover={{ transform: "scale(1.12)" }}
+          cursor="pointer"
+        >
           <FaEnvelope />
           <Link
             href="mailto:ravivarmainsights@gmail.com"
             isExternal
             color="#DD6B20"
             fontWeight="bold"
-            transition="transform 0.25s ease-out"
-            _hover={{ transform: "scale(1.12)" }}
           >
             Inboxify
           </Link>
         </HStack>
 
-        <HStack spacing={2}>
+        <HStack
+          spacing={2}
+          transition="all 0.3s ease"
+          _hover={{ transform: "scale(1.12)" }}
+          cursor="pointer"
+        >
           <FaPhone />
           <Link
             href="tel:+19376106752"
             isExternal
             color="#DD6B20"
             fontWeight="bold"
-            transition="transform 0.25s ease-out"
-            _hover={{ transform: "scale(1.12)" }}
           >
             Callgate
           </Link>
         </HStack>
 
-        <HStack spacing={2}>
+        <HStack
+          spacing={2}
+          transition="all 0.3s ease"
+          _hover={{ transform: "scale(1.12)" }}
+          cursor="pointer"
+        >
           <FaLinkedin />
           <Link
             href="https://www.linkedin.com/in/ravivarmalingala/"
@@ -58,14 +69,17 @@ export default function Contact() {
             isExternal
             color="#DD6B20"
             fontWeight="bold"
-            transition="transform 0.25s ease-out"
-            _hover={{ transform: "scale(1.12)" }}
           >
             LinkedIn
           </Link>
         </HStack>
 
-        <HStack spacing={2}>
+        <HStack
+          spacing={2}
+          transition="all 0.3s ease"
+          _hover={{ transform: "scale(1.12)" }}
+          cursor="pointer"
+        >
           <FaGithub />
           <Link
             href="https://github.com/ravivarmalingala"
@@ -74,8 +88,6 @@ export default function Contact() {
             isExternal
             color="#DD6B20"
             fontWeight="bold"
-            transition="transform 0.25s ease-out"
-            _hover={{ transform: "scale(1.12)" }}
           >
             GitZone
           </Link>
