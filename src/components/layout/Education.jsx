@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const MotionBox = motion(Box);
+const MotionIcon = motion(FaGraduationCap);
 
 export default function Education() {
   const educationData = [
@@ -30,24 +31,32 @@ export default function Education() {
         🎓 Education
       </Heading>
 
-      <Stack spacing={8}>
+      <Stack spacing={10} align="center">
         {educationData.map((edu, i) => (
           <MotionBox
             key={i}
-            p={5}
+            p={6}
+            w="80%"
             borderWidth="1px"
             borderRadius="lg"
-            boxShadow="md"
+            boxShadow="lg"
+            bg="white"
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.7, delay: i * 0.3 }}
             whileHover={{
               scale: 1.05,
-              boxShadow: "0px 0px 12px rgba(221, 107, 32, 0.6)",
+              rotate: 1,
+              boxShadow: "0px 0px 20px rgba(221, 107, 32, 0.6)",
             }}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: i * 0.2 }}
           >
             <HStack spacing={4} justify="center">
-              <FaGraduationCap size={30} color="#DD6B20" />
+              <MotionIcon
+                size={36}
+                color="#DD6B20"
+                whileHover={{ y: -5, rotate: -10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              />
               <Stack textAlign="left">
                 <Text fontWeight="bold" fontSize="lg">
                   {edu.degree}
