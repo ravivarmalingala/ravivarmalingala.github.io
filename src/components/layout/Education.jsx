@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const MotionBox = motion(Box);
-const MotionIcon = motion(FaGraduationCap);
 
 export default function Education() {
   const educationData = [
@@ -41,22 +40,16 @@ export default function Education() {
             borderRadius="lg"
             boxShadow="lg"
             bg="white"
-            initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: i * 0.3 }}
             whileHover={{
               scale: 1.05,
-              rotate: 1,
               boxShadow: "0px 0px 20px rgba(221, 107, 32, 0.6)",
             }}
           >
             <HStack spacing={4} justify="center">
-              <MotionIcon
-                size={36}
-                color="#DD6B20"
-                whileHover={{ y: -5, rotate: -10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              />
+              <FaGraduationCap size={36} color="#DD6B20" />
               <Stack textAlign="left">
                 <Text fontWeight="bold" fontSize="lg">
                   {edu.degree}
