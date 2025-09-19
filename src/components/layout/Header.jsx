@@ -1,4 +1,4 @@
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import devImg from "../../assets/men1.png";
 import boring from "../../assets/boring.png";
 import {
@@ -18,11 +18,11 @@ export default function Header() {
     <Container maxW={"7xl"}>
       <Stack
         align={"center"}
-        spacing={{base: 8, md: 10}}
-        py={{base: 10, md: 20}}
-        direction={{base: "column", md: "row"}}
+        spacing={{ base: 8, md: 10 }}
+        py={{ base: 10, md: 20 }}
+        direction={{ base: "column", md: "row" }}
       >
-        <Stack flex={1} spacing={{base: 5, md: 10}} position={"relative"}>
+        <Stack flex={1} spacing={{ base: 5, md: 10 }} position={"relative"}>
           <Image
             alt={"Hero Image"}
             align={"center"}
@@ -36,7 +36,7 @@ export default function Header() {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{base: "2xl", sm: "3xl", lg: "4xl"}}
+            fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
           >
             <Text as={"span"}>Hi! I'm </Text>
             <Text
@@ -60,31 +60,27 @@ export default function Header() {
           </Heading>
 
           <Stack
-            spacing={{base: 4, sm: 6}}
-            direction={{base: "column", sm: "row"}}
+            spacing={{ base: 4, sm: 6 }}
+            direction={{ base: "column", sm: "row" }}
           >
-            <Text as={"span"} width={"100%"} color='#5A6065'>
-              I’m a Software Development Engineer with around 5 years of
-              experience building scalable, high-performance applications in
-              financial services and enterprise SaaS. Skilled in{" "}
-              <Tag>Java</Tag>, <Tag>Spring Boot</Tag>, <Tag>React.js</Tag>, and{" "}
-              <Tag>AWS</Tag>. Passionate about engineering excellence,
-              cloud-native development, and delivering innovative solutions
-              that improve performance, reliability, and user experience.
+            <Text as={"span"} width={"100%"} color="#5A6065">
+              Skilled in <Tag>Python</Tag>, <Tag>Java</Tag>, <Tag>React.js</Tag>, and{" "}
+              <Tag>AWS</Tag>. Passionate about building scalable, high-performance
+              applications with clean code and innovative problem-solving.
             </Text>
           </Stack>
         </Stack>
         <motion.div
-          initial={{opacity: 0, scale: 0.5}}
-          animate={{opacity: 1, scale: 1}}
-          transition={{duration: 0.5}}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
         >
           <Flex
             flex={1}
             w={"full"}
             justify={"center"}
             align={"center"}
-            pr={{base: "10px", sm: "10px", lg: "70px"}}
+            pr={{ base: "10px", sm: "10px", lg: "70px" }}
           >
             <Box
               position={"relative"}

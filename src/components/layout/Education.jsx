@@ -12,11 +12,13 @@ export default function Education() {
       degree: "Master’s in Computer Science",
       school: "University of Dayton, USA",
       year: "Dec 2024",
+      skills: ["Python", "Java", "React.js", "AWS"],
     },
     {
       degree: "Bachelor’s in Computer Science and Technology",
       school: "Jawaharlal Nehru Technological University, India",
       year: "May 2016",
+      skills: ["Python", "C++", "Java"],
     },
   ];
 
@@ -50,14 +52,9 @@ export default function Education() {
             }}
           >
             <HStack spacing={4} justify="center">
-              {/* Animated icon wrapper */}
-              <MotionDiv
-                whileHover={{ y: -6, rotate: -10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
+              <MotionDiv whileHover={{ y: -6, rotate: -10 }}>
                 <FaGraduationCap size={36} color="#DD6B20" />
               </MotionDiv>
-
               <Stack textAlign="left">
                 <Text fontWeight="bold" fontSize="lg">
                   {edu.degree}
@@ -67,6 +64,9 @@ export default function Education() {
                 </Text>
                 <Text fontSize="sm" color="gray.500">
                   {edu.year}
+                </Text>
+                <Text fontSize="sm" color="#DD6B20" fontWeight="bold">
+                  Skills: {edu.skills.join(" • ")}
                 </Text>
               </Stack>
             </HStack>
