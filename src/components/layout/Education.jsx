@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const MotionBox = motion(Box);
+const MotionDiv = motion.div;
 
 export default function Education() {
   const educationData = [
@@ -49,7 +50,14 @@ export default function Education() {
             }}
           >
             <HStack spacing={4} justify="center">
-              <FaGraduationCap size={36} color="#DD6B20" />
+              {/* Animated icon wrapper */}
+              <MotionDiv
+                whileHover={{ y: -6, rotate: -10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <FaGraduationCap size={36} color="#DD6B20" />
+              </MotionDiv>
+
               <Stack textAlign="left">
                 <Text fontWeight="bold" fontSize="lg">
                   {edu.degree}
