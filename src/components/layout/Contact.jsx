@@ -23,7 +23,7 @@ export default function Contact() {
         }}
         cursor="pointer"
       >
-        Code, Call, Connect
+        Code, Call, Connect, Clone
       </Heading>
 
       {/* Links with staggered fade-in and creative hover effects */}
